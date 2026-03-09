@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seni Seviyorum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .handwritten { font-family: 'Dancing Script', cursive; }
+        .bg-soft-pink { background: linear-gradient(135deg, #fff5f7 0%, #fce4ec 100%); }
+        .photo-card:hover { transform: translateY(-10px) scale(1.02); transition: all 0.4s ease; }
+        /* Kalp uçuşma efekti */
+        .heart { position: fixed; color: #ffacc5; font-size: 20px; z-index: -1; animation: fly 10s linear infinite; opacity: 0; }
+        @keyframes fly {
+            0% { transform: translateY(100vh) translateX(0); opacity: 1; }
+            100% { transform: translateY(-10vh) translateX(100px); opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-soft-pink min-h-screen">
+
+    <div class="max-w-3xl mx-auto pt-16 px-6">
+        <div class="bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl p-8 md:p-12 border border-white/50 mb-20 animate-fade-in">
+            <h1 class="text-5xl md:text-6xl text-pink-400 handwritten text-center mb-8">Sevgilim...</h1>
+            
+            <div class="space-y-6 text-gray-700 leading-relaxed text-lg italic">
+                <p>Her şeyden önce, sana verdiğim acılar için özür dilerim. Biliyorum ki hatalar yaptım ve seni üzdüm. Seninle geçirdiğimiz her an benim için çok kıymetliydi ve hâlâ öyle.</p>
+                <p>Seninle paylaştığımız anlar, gülüşlerin, birlikte geçirdiğimiz zamanlar... Bunların hepsi kalbimde özel bir yere sahip. Sensiz geçen her gün eksik, her an yarım kalmış gibi hissettiriyor.</p>
+                <p>Biliyorum ki seni hayal kırıklığına uğrattım, ama lütfen bana bir şans daha ver. Seni mutlu etmek, yanında olmak ve birlikte güzel anılar biriktirmek istiyorum. Sen benim için çok özelsin ve seninle geçireceğimiz gelecek günleri hayal ediyorum.</p>
+                <p>Seni seviyorum ve her zaman seveceğim. Lütfen beni affet ve tekrar bir araya gelelim. Seninle olmak beni tamamlıyor.</p>
+                <p class="text-right font-semibold pt-4">— Ömer Faruk Süleymanoğlu...</p>
+            </div>
+        </div>
+
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">Bizim Anılarımız</h2>
+            <p class="text-gray-500 italic">Seninle paylaştığımız güzel anlar</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-32">
+            
+            <div class="photo-card relative group overflow-hidden rounded-2xl shadow-lg bg-white p-2">
+                <img src="foto/3.jpeg" class="w-full h-64 object-cover rounded-xl">
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <p class="text-white font-medium">İlk Günümüz ✨</p>
+                </div>
+            </div>
+
+            <div class="photo-card relative group overflow-hidden rounded-2xl shadow-lg bg-white p-2">
+                <img src="foto/2.jpeg" class="w-full h-64 object-cover rounded-xl">
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <p class="text-white font-medium">En Mutlu Anımız ❤️</p>
+                </div>
+            </div>
+
+            <div class="photo-card relative group overflow-hidden rounded-2xl shadow-lg bg-white p-2">
+                <img src="foto/1.jpeg" class="w-full h-64 object-cover rounded-xl">
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <p class="text-white font-medium"> Dünyam 🌍</p>
+                </div>
+            </div>
+
+             <div class="photo-card relative group overflow-hidden rounded-2xl shadow-lg bg-white p-2">
+                <img src="foto/4.jpeg" class="w-full h-64 object-cover rounded-xl">
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <p class="text-white font-medium">Bebekliğimiz ❤️</p>
+                </div>
+            </div>
+
+             <div class="photo-card relative group overflow-hidden rounded-2xl shadow-lg bg-white p-2">
+                <img src="foto/5.jpeg" class="w-full h-64 object-cover rounded-xl">
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <p class="text-white font-medium">Soğuk Gündeki Sıcak Kalplerimiz ❤️</p>
+                </div>
+            </div>
+
+             <div class="photo-card relative group overflow-hidden rounded-2xl shadow-lg bg-white p-2">
+                <img src="foto/6.jpeg"class="w-full h-64 object-cover rounded-xl">
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <p class="text-white font-medium">Güzelim ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed bottom-6 right-6 bg-white shadow-2xl rounded-full px-6 py-3 flex items-center gap-4 border border-pink-100 animate-bounce-slow">
+        <div class="text-right">
+            <p class="text-xs font-bold text-gray-800">Emre Fel - Yar Bensiz</p>
+            <div class="flex justify-end gap-1">
+                <div class="w-1 h-3 bg-pink-400 animate-pulse"></div>
+                <div class="w-1 h-3 bg-pink-300 animate-pulse delay-75"></div>
+                <div class="w-1 h-3 bg-pink-200 animate-pulse delay-150"></div>
+            </div>
+        </div>
+        <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white shadow-lg">
+            ▶️
+        </div>
+    </div>
+
+    <script>
+        // Arka planda uçuşan kalpler oluşturma
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = Math.random() * 3 + 7 + "s";
+            document.body.appendChild(heart);
+            setTimeout(() => { heart.remove(); }, 10000);
+        }
+        setInterval(createHeart, 800);
+    </script>
+
+<audio id="myAudio" loop>
+    <source src="müzik/mp3.mp3" type="audio/mpeg">
+    Tarayıcın ses desteğini karşılamıyor.
+</audio>
+
+<div onclick="toggleMusic()" class="fixed bottom-8 right-8 bg-white/90 backdrop-blur shadow-xl rounded-full pl-6 pr-3 py-3 flex items-center gap-4 border border-pink-100 cursor-pointer hover:scale-105 transition-all z-50">
+    <div class="text-right">
+        <p class="text-[11px] font-bold text-gray-800">Emre Fel - Yar Bensiz</p>
+        <p id="musicStatus" class="text-[9px] text-gray-400 uppercase tracking-widest leading-none">Duraklatıldı</p>
+    </div>
+    <div id="playBtn" class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white shadow-lg">
+        <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+        </svg>
+        <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+        </svg>
+    </div>
+</div>
+
+<script>
+    const audio = document.getElementById("myAudio");
+    const playIcon = document.getElementById("playIcon");
+    const pauseIcon = document.getElementById("pauseIcon");
+    const musicStatus = document.getElementById("musicStatus");
+
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.classList.add("hidden");
+            pauseIcon.classList.remove("hidden");
+            musicStatus.innerText = "Çalıyor...";
+            musicStatus.classList.replace("text-gray-400", "text-pink-400");
+        } else {
+            audio.pause();
+            playIcon.classList.remove("hidden");
+            pauseIcon.classList.add("hidden");
+            musicStatus.innerText = "Duraklatıldı";
+            musicStatus.classList.replace("text-pink-400", "text-gray-400");
+        }
+    }
+</script>
+
+</body>
+</html>
